@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Vehículo IoT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <div class="container my-4">
+        <h1 class="text-center mb-2">Monitoreo de Vehículo IoT</h1>
+
+        <!-- Subtítulo con el estado del primer dispositivo -->
+        <h4 class="text-center text-info mb-4" id="firstStatus">Estado actual: Cargando...</h4>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>IP</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="deviceTableBody">
+                    <!-- Datos dinámicos de la API -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        Desarrollado por Victor Gabriel Gutierrez Hernandez
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
